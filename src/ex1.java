@@ -9,6 +9,10 @@ public class ex1
         double delta;
         System.out.println("הכנס מספר כמקדם של A לא ניתן להכניס 0 לערך זה");
         a = in.nextDouble();
+        while (a == 0) {
+            System.out.println("שגיאה: המקדם A לא יכול להיות 0. נסה שוב:");
+            a = in.nextDouble();
+        }
         System.out.println("הכנס מספר כמקדם של B");
         b=in.nextDouble();
         System.out.println("הכנס מספר כמקדם של C");
